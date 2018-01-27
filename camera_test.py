@@ -16,8 +16,8 @@ def describe_img(image_url):
         os.path.dirname(__file__),
         image_url)
 
-        with io.open(file_name, 'rb') as image_file:
-            content = image_file.read()
+    with io.open(file_name, 'rb') as image_file:
+        content = image_file.read()
 
 camera = picamera.PiCamera()
 counter = 0
