@@ -23,6 +23,7 @@ def describe_img(image_url):
 
 camera = picamera.PiCamera()
 counter = 0
+camera.resolution(720, 720)
 camera.start_preview()
 while True:
     print 'Capturing image:', counter
