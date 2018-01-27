@@ -18,11 +18,15 @@ def describe_img(image_url):
 
     with io.open(file_name, 'rb') as image_file:
         content = image_file.read()
+    
+    
 
 camera = picamera.PiCamera()
 counter = 0
+camera.start_preview()
 while True:
     print 'Capturing image:', counter
     camera.capture('image1.jpg')
     describe_img('image1.jpg')
     counter += 1
+camera.stop_preview()
