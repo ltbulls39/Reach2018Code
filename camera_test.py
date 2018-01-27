@@ -4,10 +4,10 @@ import os
 
 from time import sleep
 
-from serial import serial
+#from serial import serial
 
 
-ser = Serial('/dev/ttyACM0', 9600)
+#ser = Serial('/dev/ttyACM0', 9600)
 
 
 def describe_img(image_url):
